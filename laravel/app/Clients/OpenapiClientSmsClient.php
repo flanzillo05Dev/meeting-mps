@@ -32,7 +32,7 @@ class OpenapiClientSmsClient
                 'test' => config('services.openapi.sms.method.sendSms.test'),
                 'sender' => config('services.openapi.sms.method.sendSms.sender'),
                 'body' => $message, // limit 163 chars
-                'recipients' => "+39-$phone"
+                'recipients' => "$phone"
             ])
         ]);
     }
