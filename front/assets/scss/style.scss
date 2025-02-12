@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap');
+@import 'variables';
+@import 'vuetify/styles.scss';
+@import 'override';
+@import 'layout/text';
+@import 'layout/container';
+@import 'layout/header';
+@import 'layout/footer';
+
+/*components*/
+@import './components/VBreadcrumb';
+@import './components/VAlert';
+@import './components/VButtons';
+@import './components/VCard';
+@import './components/VCarousel';
+@import './components/VField';
+@import './components/VList';
+@import './components/VInput';
+@import './components/VNavigationDrawer';
+@import './components/VShadow';
+@import './components/VSwitch';
+@import './components/VSelectionControl';
+@import './components/VTextField';
+@import './components/VTextarea';
+@import './components/VTabs';
+@import './components/VTable';
+@import './components/VExpansionpanel';
+@import './components/VPagination';
+@import './components/VTooltip';
+
+//Nft Demo
+@import 'demos/nft';
+
+//Conference Demo
+@import 'demos/conference';
+
+//Course Demo
+@import 'demos/course';
+
+//Medical Demo
+@import 'demos/medical';
+
+//Payment Demo
+@import 'demos/payment';
+
+//It Demo
+@import 'demos/it';
+
+//Travel Demo
+@import 'demos/travel';
+
+//Real estate Demo
+@import 'demos/realEstate';
+
+//Sass Demo
+@import 'demos/sass_demo';
+
+//Corporate Demo
+@import 'demos/corporate';
+
+
+//About us page
+@import 'pages/about';
+
+//Service Page
+@import 'pages/service';
+
+//Portfolio Page
+@import 'pages/portfolio';
+
+//Blog Page
+@import 'pages/blog';

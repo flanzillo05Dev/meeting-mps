@@ -1,0 +1,209 @@
+ .conference-hero {
+        .content {
+            .start-on {
+                line-height: 0;
+                width: fit-content;
+                border-bottom: 9px solid rgba(var(--v-theme-info),0.3);
+
+                @media screen and (max-width:767px) {
+                    margin: 0 auto 15px;
+                }
+            }
+        }
+
+        &::after {
+            content: "";
+            position: absolute;
+            width: 500px;
+            height: 500px;
+            background: radial-gradient(rgba(242, 236, 29, 0.2), rgba(242, 236, 29, 0.15), rgba(242, 236, 29, 0.05), rgba(242, 236, 29, 0.02), rgba(242, 236, 29, 0));
+            top: -250px;
+            right: -150px;
+        }
+
+        .left-part {
+            border-radius: 166px 0px 166px 0px;
+
+            .tag-left {
+                left: -80px;
+                top: 75px;
+                background-color: #f2ec1d;
+                box-shadow: 0 8px 15px rgba(47, 115, 242, 0.2);
+
+                @media screen and (max-width:600px) {
+                    left: 0;
+                    top: 20px;
+                }
+            }
+        }
+
+        .right-part {
+            border-radius: 0px 166px 0px 166px;
+            top: 25px;
+
+            .tag-right {
+                right: -80px;
+                top: 100px;
+                background-color: #7df9c2;
+                box-shadow: 0 8px 15px rgba(47, 115, 242, 0.2);
+
+                @media screen and (max-width:600px) {
+                    right: 0;
+                    top: 25px;
+                }
+            }
+        }
+    }
+
+    //Digital-events
+    .digital-events {
+        .left-bg {
+            @media screen and (max-width:991px) {
+                border-top-left-radius: 8px !important;
+                border-bottom-left-radius: 0px !important;
+                border-top-right-radius: 8px !important;
+            }
+
+        }
+
+        .right-bg {
+            @media screen and (max-width:991px) {
+                border-top-right-radius: 0px !important;
+                border-bottom-left-radius: 8px !important;
+                border-bottom-right-radius: 8px !important;
+            }
+        }
+
+        @media screen and (max-width:600px) {
+            .ticket-image {
+                width: 100%;
+            }
+        }
+    }
+
+    //Conference section
+    .online-offline-conferences {
+        &::before {
+            content: "";
+            position: absolute;
+            background-color: #E0F7FF;
+            width: 687px;
+            height: 687px;
+            bottom: -275px;
+            left: 140px;
+            border-radius: 100%;
+        }
+    }
+
+    
+    //Upcomming conference
+    .upcomming-conference {
+        .date-block {
+            transition: 0.5s;
+
+            &:hover {
+                background-color: rgb(var(--v-theme-primary)) !important;
+
+                .text-muted {
+                    color: rgb(var(--v-theme-surface)) !important;
+                }
+            }
+        }
+
+        .carousel {
+            .carousel__prev {
+                left: -35px;
+
+                @media screen and (max-width:767px) {
+                    left: -20px;
+                }
+            }
+
+            .carousel__next {
+                right: -35px;
+
+                @media screen and (max-width:767px) {
+                    right: -20px;
+                }
+            }
+        }
+    }
+
+    //Attendees Say
+    .attendees-say {
+        .attendee-img {
+            border-radius: 175px 0 175px 0;
+
+            @media screen and (max-width:991px) {
+                border-radius: 100px 0 100px 0;
+            }
+
+            @media screen and (max-width:600px) {
+                border-radius: 190px 0 190px 0;
+            }
+        }
+
+        .quote {
+            top: 50px;
+            right: -40px;
+            box-shadow: 0 0px 30px rgba(24, 23, 23, 0.1);
+        }
+    }
+
+    //Ticket section
+    .ticket {
+        .ticket-block {
+            margin-bottom: -180px;
+        }
+
+        .digitalticket1 {
+            top: 65px;
+            left: 50px;
+            z-index: 1;
+            border-radius: 1.5rem;
+            transform: rotate(-30deg);
+        }
+
+        .digitalticket2 {
+            top: 115px;
+            left: 105px;
+            z-index: 0;
+            border-radius: 1.5rem;
+            transform: rotate(-30deg);
+            opacity: 0.25 !important;
+        }
+    }
+
+//Footer
+.conference-footer {
+    padding-top: 35px;
+    .v-field--variant-solo {
+        background: transparent !important;
+        box-shadow: none !important;
+    }
+
+    .newsletter {
+        .v-btn:hover>.v-btn__overlay {
+            opacity: 0;
+        }
+    }
+    .v-field {
+        color:  rgba(var(--v-theme-white));
+    }
+
+    ul {
+        li {
+            a {
+                transition: 0.5s;
+
+                &:hover {
+                    color: rgb(var(--v-theme-white)) !important;
+                }
+            }
+        }
+    }
+
+    .v-chip.v-chip--size-default {
+        --v-chip-height: 25px;
+    }
+}

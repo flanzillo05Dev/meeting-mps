@@ -1,0 +1,146 @@
+//Find Real Estate section
+.find-real-estate {
+    background: url('/images/real-estate/estate-bg.jpg') no-repeat center bottom;
+    background-size: cover;
+    padding: 175px 0 90px;
+
+    @media screen and (max-width:991px) {
+        padding: 100px 0 30px;
+    }
+
+    .search-tabs {
+        .v-tab.v-tab {
+            background-color: rgba(var(--v-theme-surface), 0.4);
+        }
+
+        .v-slide-group-item--active {
+            background-color: rgb(var(--v-theme-surface)) !important;
+        }
+
+        .v-tab--selected .v-tab__slider {
+            opacity: 0;
+        }
+
+        .v-tabs--density-default {
+            --v-tabs-height: 53px;
+        }
+
+        .v-field__input {
+            padding-top: 0;
+        }
+
+        @media screen and (max-width:767px) {
+            .w-50 {
+                width: 100% !important;
+            }
+        }
+    }
+}
+
+//Save Money
+.save-money {
+    .money-line {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        width: 100%;
+        height: 3px;
+        background-color: rgb(var(--v-theme-info));
+    }
+
+    .money-dot {
+        position: absolute;
+        top: -9px;
+        padding: 3px;
+        border-radius: 50%;
+        border: 2px solid rgb(var(--v-theme-info));
+        background-color: rgb(var(--v-theme-surface));
+    }
+
+    .money-dot .mini-dot {
+        background-color: rgb(var(--v-theme-info));
+        width: 12px;
+        height: 12px;
+        border-radius: 50%;
+    }
+
+    .v-tab.v-tab.v-btn {
+        background-color: transparent;
+        min-width: auto;
+        height: 42px !important;
+    }
+
+  
+
+    .v-tab--selected .v-tab__slider {
+        opacity: 0;
+    }
+
+    .v-field__input {
+        padding-top: 0;
+    }
+
+    .tab-border {
+        border: 3px solid rgb(var(--v-theme-info)) !important;
+    }
+
+    .v-tabs--density-default {
+        --v-tabs-height: auto;
+    }
+
+    .v-slider-track__fill {
+        background-color: rgb(var(--v-theme-darkblue)) !important;
+    }
+
+    .v-slider-thumb,
+    .v-slider-thumb__ripple {
+        color: rgb(var(--v-theme-info)) !important;
+    }
+}
+
+//Why Choose
+.why-choose {
+    .over-card {
+        bottom: -90px;
+        right: 60px;
+
+        @media screen and (max-width:991px) {
+            position: unset !important;
+        }
+    }
+}
+
+//History
+.history-bg {
+    background: linear-gradient(to right, rgb(var(--v-theme-lightinfo)) 0%, rgb(var(--v-theme-lightinfo)) 50%, rgb(var(--v-theme-lightdarkgray)) 50%, rgb(var(--v-theme-lightdarkgray)) 100%);
+
+    .history-bg2 {
+        background: linear-gradient(to right, rgb(var(--v-theme-lightinfo)) 0%, rgb(var(--v-theme-lightinfo)) 70%, rgb(var(--v-theme-lightdarkgray)) 30%, rgb(var(--v-theme-lightdarkgray)) 100%);
+        padding: 200px 15px;
+
+        @media screen and (max-width:991px) {
+            padding: 90px 15px;
+        }
+
+        @media screen and (max-width:767px) {
+            background: rgb(var(--v-theme-lightinfo));
+            padding: 30px 15px;
+        }
+    }
+}
+
+//Summary
+.estate-summary-bg {
+    background: linear-gradient(to right, rgb(var(--v-theme-surface)) 0%, rgb(var(--v-theme-surface)) 50%, rgb(var(--v-theme-primary)) 50%, rgb(var(--v-theme-primary)) 100%);
+
+    @media screen and (max-width:767px) {
+        .rounded-md {
+            border-radius: 0 !important;
+        }
+    }
+
+    .border-right {
+        border-color: rgba(var(--v-theme-lightinfo), 0.4) !important;
+    }
+}

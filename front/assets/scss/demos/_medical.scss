@@ -1,0 +1,103 @@
+
+    //Hero Section
+    .medical-hero-banner {
+        background: url('/images/medical/banner.jpg') no-repeat top center;
+    }
+
+    //Easy Step and Get section
+    .steps-and-get {
+        background: url('/images/medical/steps-banner.jpg') no-repeat center !important;
+        background-size: cover !important;
+    }
+
+    //Clients Review Section
+    .clients-review {
+        .review-box {
+            padding: 90px 0 90px;
+
+            @media screen and (max-width:991px) {
+                padding: 30px 0 80px;
+            }
+
+            .carousel__viewport {
+                margin-right: 100px;
+                @media screen and (max-width:991px) {
+                    margin-right: 0px;
+                }
+            }
+
+            .carousel__item {
+                padding-left: 90px;
+                padding-right: 120px;
+
+                @media screen and (max-width:991px) {
+                    padding-left: 30px;
+                    padding-right: 30px;
+                }
+
+                .v-rating__item {
+                    width: 25px;
+                }
+            }
+
+            .carousel__pagination {
+                margin: 0;
+                display: block;
+                position: absolute;
+                top: 0;
+                right: -40px;
+
+                @media screen and (max-width:991px) {
+                    top: unset;
+                    bottom: -120px;
+                    right: 0;
+                    left: .0;
+                    display: flex;
+                }
+
+                .carousel__pagination-item {
+                    &:nth-of-type(1) {
+                        background: url('/images/medical/carousel-1.png') no-repeat center !important;
+                    }
+
+                    &:nth-of-type(2) {
+                        background: url('/images/medical/carousel-2.png') no-repeat center !important;
+                        margin: 20px 0;
+
+                        @media screen and (max-width:991px) {
+                            margin: 0px 10px;
+                        }
+                    }
+
+                    &:nth-of-type(3) {
+                        background: url('/images/medical/carousel-3.png') no-repeat center !important;
+                    }
+
+                    .carousel__pagination-button {
+                        height: 83px;
+                        width: 83px;
+                        border-radius: 50%;
+                        border: 2px solid transparent;
+
+                        &.carousel__pagination-button--active {
+                            border: 2px solid rgb(var(--v-theme-primary));
+                        }
+
+                        &::after {
+                            display: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    //Newsletter
+    .email-newsletter {
+        .newsletter-conatiner {
+            .v-field__input{
+                padding:10px;
+            }
+        }
+    }
+

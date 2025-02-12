@@ -1,0 +1,215 @@
+
+  .it-wrapper {
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: 60px;
+      right: -90px;
+      width: 306px;
+      height: 306px;
+      background: #f9c78f;
+      border-radius: 50%;
+      animation: shap 2s infinite;
+      display: block;
+      z-index: 0;
+
+      @media screen and (max-width:1024px) {
+        display: none;
+      }
+    }
+
+    @keyframes shap {
+      0% {
+        bottom: 60px;
+        right: -90px;
+      }
+
+      50% {
+        bottom: 80px;
+        right: -90px;
+      }
+
+      100% {
+        bottom: 60px;
+        right: -90px;
+      }
+    }
+
+
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: -100px;
+      left: -100px;
+      width: 306px;
+      height: 306px;
+      background: #054ac8;
+      border-radius: 50%;
+      animation: topshap 2s infinite;
+      z-index: 1;
+    }
+
+    @keyframes topshap {
+      0% {
+        top: -60px;
+        left: -60px;
+      }
+
+      50% {
+        top: -80px;
+        left: -60px;
+      }
+
+      100% {
+        top: -60px;
+        left: -60px;
+      }
+    }
+
+    .banner-shape::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      width: 100%;
+      height: 300px;
+      background: #1358d8;
+      clip-path: ellipse(56% 50%);
+      z-index: 0;
+      bottom: -150px;
+      @media screen and (max-width:767px) {
+        bottom: -90px;
+      }
+    }
+
+    .it-banner {
+      padding: 200px 0 50px;
+      @media screen and (max-width:1200px) {
+        padding: 110px 0 0px;
+      }
+      @media screen and (max-width:767px) {
+        padding: 80px 0 0px;
+      }
+
+      .banner-bottom-line {
+        position: absolute;
+        left: -30px;
+        bottom: 50px;
+        z-index: 1;
+      }
+
+      .banner-circle {
+        position: absolute;
+        left: -15px;
+        top: 100px;
+      }
+
+      .banner-circle-line {
+        position: absolute;
+        right: 0;
+        top: -50px;
+      }
+    }
+
+    .banner-form {
+      .v-btn {
+        color: #000 !important;
+      }
+
+      .v-text-field input {
+        font-size: 1rem;
+        padding: 12px 12px;
+      }
+
+      .v-field--variant-solo{
+        box-shadow: none;
+      }
+    }
+  }
+
+  //Build Website
+  .website-card {
+    transition: all 0.4s ease-in-out;
+    border: 2px solid transparent;
+
+    .card-link {
+      opacity: 0;
+      @media screen and (max-width:1024px) {
+        opacity: 1;
+      }
+    }
+
+    &:hover {
+      .card-link {
+        opacity: 1;
+        transition: all 0.4s ease-in-out;
+      }
+
+      border: 2px solid rgb(var(--v-theme-primary));
+      box-shadow: none !important;
+    }
+  }
+
+  //Revenue
+  .work-revenue {
+    .shape {
+      transform: translate(-50%, -50%) !important;
+
+    }
+  }
+
+  //Price Plans
+  .choose-plan {
+    .v-btn-group {
+      width: 100%;
+
+      .v-btn {
+        background-color: rgb(var(--v-theme-lightinfo));
+        font-size: 17px;
+
+        &.v-btn--active {
+          background-color: rgb(var(--v-theme-surface));
+
+          .v-btn__overlay {
+            background: transparent;
+          }
+        }
+      }
+    }
+  }
+
+  //Faq
+  .faq{
+    @media screen and (max-width:1024px) {
+      .v-expansion-panel-title__icon{
+        font-size: 15px;
+      } 
+    } 
+  }
+
+
+//Footer
+.it-footer {
+
+  .it-footer-bg {
+    position: relative;
+    top: -280px;
+    z-index: 0;
+    @media screen and (max-width:1024px) {
+      top: -240px;
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 300px;
+      z-index: 0;
+      background: rgb(var(--v-theme-themecolordark));
+      clip-path: ellipse(56% 50%);
+    }
+  }
+
+}

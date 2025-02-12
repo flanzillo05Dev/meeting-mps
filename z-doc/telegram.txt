@@ -1,0 +1,8 @@
+7928300561:AAHVEJv4ODa5x-Bv5ang32L0eevYcp6sxYM
+
+
+
+{"ok":true,"result":[{"update_id":56166385,
+"my_chat_member":{"chat":{"id":-4745713352,"title":"Meeting MPS Recuperi","type":"group","all_members_are_administrators":true},"from":{"id":731017680,"is_bot":false,"first_name":"Ferdinando Lanzillo","username":"dev_nando","language_code":"it"},"date":1739353184,"old_chat_member":{"user":{"id":7928300561,"is_bot":true,"first_name":"MeetingBioEcoRecuperi","username":"MeetingBioEcoRecuperiBot"},"status":"left"},"new_chat_member":{"user":{"id":7928300561,"is_bot":true,"first_name":"MeetingBioEcoRecuperi","username":"MeetingBioEcoRecuperiBot"},"status":"member"}}},{"update_id":56166386,
+"message":{"message_id":20,"from":{"id":731017680,"is_bot":false,"first_name":"Ferdinando Lanzillo","username":"dev_nando","language_code":"it"},"chat":{"id":-4745713352,"title":"Meeting MPS Recuperi","type":"group","all_members_are_administrators":true},"date":1739353184,"group_chat_created":true}},{"update_id":56166387,
+"message":{"message_id":21,"from":{"id":731017680,"is_bot":false,"first_name":"Ferdinando Lanzillo","username":"dev_nando","language_code":"it"},"chat":{"id":-4745713352,"title":"Meeting MPS Recuperi","type":"group","all_members_are_administrators":true},"date":1739353191,"text":"/start","entities":[{"offset":0,"length":6,"type":"bot_command"}]}}]}

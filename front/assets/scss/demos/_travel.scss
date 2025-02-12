@@ -1,0 +1,125 @@
+//Main Banner
+.trip-bg {
+    background: url('/images/travel/travel-bg.jpg') no-repeat center;
+    background-size: cover;
+}
+
+.travel_input {
+    .v-field__input {
+        color: rgb(var(--v-theme-dark));
+        font-size: 20px !important;
+        font-weight: 500;
+        padding-top: 0;
+        min-width: 130px;
+        opacity: 1;
+    }
+
+    .v-field__append-inner {
+        position: relative;
+        top: -6px;
+        right: -5px;
+    }
+}
+
+//Top Destination 
+.browse-category {
+    .browse-img {
+        &::before {
+            background: none;
+        }
+    }
+}
+
+//Features
+.features {
+    &::before {
+        content: "";
+        position: absolute;
+        width: 647px;
+        height: 647px;
+        left: -149px;
+        bottom: 0;
+        background: rgb(var(--v-theme-lightprimary));
+        filter: blur(250px);
+    }
+
+    .carousel__viewport {
+        margin-bottom: 30px;
+    }
+
+    .carousel__prev,
+    .carousel__next {
+        position: unset;
+        display: contents;
+    }
+
+    .carousel__prev {
+        left: unset;
+    }
+
+    .carousel__next {
+        right: unset;
+    }
+}
+
+//Countries
+.countries {
+    .country-box {
+        .country-box-list {
+
+            &:nth-of-type(even) {
+                padding-top: 60px;
+
+                @media screen and (max-width:1024px) {
+                    padding-top: 12px;
+                }
+
+                .countries-border {
+                    &::before {
+                        position: absolute;
+                        top: 5px;
+                        left: -34px;
+                        content: "";
+                        width: 2px;
+                        height: 25px;
+                        background-color: rgb(var(--v-theme-primary));
+                    }
+                }
+            }
+
+        }
+    }
+}
+
+//Testimonials
+.testimonials {
+
+    .carousel__prev,
+    .carousel__next {
+        position: relative;
+        display: inline-block;
+        margin: -96px 0;
+        width: 100%;
+        top: -10px;
+    }
+
+    .carousel__prev {
+        left: 10px;
+
+        .prv {
+            position: absolute;
+            top: -10px;
+            right: 40px;
+        }
+    }
+
+    .carousel__next {
+        right: unset;
+
+        .nxt {
+            position: absolute;
+            top: -34px;
+            right: 0px;
+        }
+    }
+}

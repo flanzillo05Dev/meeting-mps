@@ -1,0 +1,191 @@
+.sass-banner {
+    .v-btn--variant-outlined {
+        border-width: 2px;
+    }
+
+    .sass-banner-img {
+        margin-left: -200px;
+
+        @media screen and (max-width:1024px) {
+            margin-left: 0px;
+        }
+    }
+}
+
+//Pulse Animation 
+.pulse-animation2 {
+    position: absolute;
+    right: 33%;
+    top: -40px;
+}
+
+.pulse-animation3 {
+    position: absolute;
+    right: 18%;
+    top: -60px;
+}
+
+.pulse-animation {
+    position: absolute;
+    right: 100px;
+    bottom: 0;
+}
+
+.pulse,
+.pulse2,
+.pulse3 {
+    position: relative;
+    background-color: #054ac8;
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+}
+
+.pulse2 {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+
+.pulse3 {
+    width: 150px;
+    height: 150px;
+    background-color: rgba(107, 193, 249, 0.15);
+}
+
+.ring,
+.ring2,
+.ring3 {
+    position: absolute;
+    background-color: #054ac8;
+    width: 100%;
+    height: 100%;
+    border-radius: 100%;
+    opacity: 0.8;
+    animation: pulsing 4s ease-out infinite;
+}
+
+.ring3 {
+    background: rgba(107, 193, 249, 0.25);
+}
+
+.ring:nth-of-type(1),
+.ring2:nth-of-type(1),
+.ring3:nth-of-type(1) {
+    animation-delay: -1s;
+}
+
+.ring:nth-of-type(2),
+.ring2:nth-of-type(2),
+.ring3:nth-of-type(2) {
+    animation-delay: -2s;
+}
+
+.ring:nth-of-type(3),
+.ring2:nth-of-type(3),
+.ring3:nth-of-type(3) {
+    animation-delay: -3s;
+}
+
+@keyframes pulsing {
+    100% {
+        transform: scale(4);
+        opacity: 0;
+    }
+}
+
+//Reviews
+.reviews {
+    .carousel__prev {
+        left: -75px;
+    }
+
+    .carousel__next {
+        right: -75px;
+    }
+
+    @media screen and (max-width:767px) {
+        .carousel__prev {
+            left: 38%;
+        }
+
+        .carousel__next {
+            right: 38%;
+        }
+
+        .carousel__prev,
+        .carousel__next {
+            top: 100%
+        }
+    }
+}
+
+//Pricing Cards
+.sass-pricing {
+    .v-btn-group .v-btn {
+        border-radius: 30px;
+    }
+
+    .v-btn-group--density-comfortable.v-btn-group {
+        height: auto !important;
+    }
+
+    .v-btn-group {
+        width: 100%;
+
+        .v-btn {
+            background-color: rgb(var(--v-theme-white));
+            border: 1px solid transparent;
+            color: rgb(var(--v-theme-primary));
+            font-size: 17px;
+            height: 48px !important;
+
+            &.v-btn--active {
+                background-color: rgb(var(--v-theme-primary));
+                color: rgb(var(--v-theme-white));
+
+                .v-btn__overlay {
+                    background: transparent;
+                }
+            }
+        }
+    }
+
+    .v-list {
+        .bg-white {
+            background: rgba(var(--v-theme-white), 0.3) !important;
+        }
+    }
+
+    @media screen and (max-width:991px) {
+        .price-tab {
+            width: 50%;
+            margin: 0 auto;
+        }
+    }
+
+    @media screen and (max-width:767px) {
+        .price-tab {
+            width: 100%;
+            margin: 0 auto;
+        }
+    }
+}
+
+//FAQ
+.sass-faq {
+    .v-field__input {
+        padding: 0;
+
+        input {
+            border-bottom: 2px solid rgb(var(--v-theme-primary));
+            padding-bottom:20px;
+        }
+    }
+
+    .faq-card {
+        &:hover {
+            box-shadow: 0px 25px 60px rgba(59, 75, 104, 0.1) !important;
+        }
+    }
+}
