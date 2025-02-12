@@ -3,6 +3,7 @@
 namespace App\Clients;
 
 use GuzzleHttp\Exception\GuzzleException;
+use Illuminate\Support\Str;
 
 class OpenapiClientSmsClient
 {
@@ -27,12 +28,13 @@ class OpenapiClientSmsClient
      */
     public function sendSMS($phone, $message): \Psr\Http\Message\ResponseInterface
     {
+        $phone = Str::replaceStart('+39', '', $phone);
         return $this->client->post(config('services.openapi.sms.method.sendSms.endpoint'), [
             'body' => json_encode([
                 'test' => config('services.openapi.sms.method.sendSms.test'),
                 'sender' => config('services.openapi.sms.method.sendSms.sender'),
                 'body' => $message, // limit 163 chars
-                'recipients' => "$phone"
+                'recipients' => "+39-$phone"
             ])
         ]);
     }
