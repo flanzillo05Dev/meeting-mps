@@ -48,19 +48,42 @@ class MeetingController extends Controller
                         )->getBody()->getContents(), TRUE);
             }
 
+            $bodyMeetingCreatedAt = Carbon::parse($bodyMeeting['created_at'])->format('Y-m-d H:i:s');
+
             TelegramSupport::sendMessageAlertGroup("
 ------------------------------------
-🗓️Nuovo meeting
-#{$bodyMeeting['id']} - {$bodyMeeting['title']}
-⏳Data Inizio: {$bodyMeeting['date_start']}
-⌛️Data Fine: {$bodyMeeting['date_end']}
-
+Nuovo Meeting creato il: {$bodyMeetingCreatedAt}
 Azienda: {$bodyMeeting['user_company_name']}
 Nome e Cognome: {$bodyMeeting['user_name']}
 Email: {$bodyMeeting['user_email']}
 Tel./Cell.: {$bodyMeeting['user_phone']}
 
-record creato il: {$bodyMeeting['created_at']}
+🗓️Data: {$slotTime->full_slot_time->format('d/m/Y')}
+⏳Ora: {$slotTime->slot_time_start} / {$slotTime->slot_time_end}
+
+👇🏻👇🏻Puoi usare il titolo e descrizione di seguito per la creazione del meet (copia e incolla) 👇🏻👇🏻
+
+TITOLO:
+🗓️ Meeting {$bodyMeeting['user_company_name']} Formativo: Novità e Implicazioni della Nuova Legge sui Rifiuti - RENTRI ♻️
+
+
+DESCRIZIONE:
+Gentile Cliente,
+
+La ringraziamo per averci comunicato la ricezione del Registro di Carico e Scarico Rifiuti.
+Per procedere con la sua call formativa, la invitiamo a collegarsi alla nostra piattaforma di consulenza [link] e prenotare l’incontro nel giorno e orario più comodo per lei.
+
+⚠️ Per un meeting efficace, la preghiamo di avere con sé:
+    • ✅ Il Registro di Carico e Scarico Rifiuti aggiornato al 12 febbraio 2025
+    • ✅ Gli ultimi Formulari di Identificazione dei Rifiuti (FIR)
+
+⏳ Durata della sessione: 50 minuti
+
+Per qualsiasi chiarimento, restiamo a sua disposizione.
+
+Cordiali saluti,
+Team MPS Recuperi S.a.s
+
 ------------------------------------
             ");
 
