@@ -22,10 +22,10 @@ import 'sweetalert2/dist/sweetalert2.min.css';
 //Declare theme colors
 const themecolors: ThemeDefinition = {
     colors: {
-      primary:'#2f73f2',
-      secondary:'#46c4ff',
+      primary:'#266141',
+      secondary:'#89c3a3',
       danger:'#dc3545',
-      info: '#6bc1f9',
+      info: '#89c3a3',
       success:'#3cd278',
       warning:'#f9c78f',
       light:'#f0f6fa',
@@ -37,7 +37,7 @@ const themecolors: ThemeDefinition = {
       lightinfo:'#f3f9fd',
       lightinverse:'#dfebfc',
       lightgray:'#e2e8f3',
-      lightprimarygray:'#effbff',
+      lightprimarygray:'#deede5',
       darkprimarygray:'#1358d8',
       lightdarkdanger:'#fbcac9',
       lightdarkwarning:'#ffe8af',
@@ -46,7 +46,7 @@ const themecolors: ThemeDefinition = {
       lightdarkgray:'#bccfe1',
       themecolordark: '#102c46',
       inputdark:'#143655',
-      darkprimary: '#2862ce',
+      darkprimary: '#16422a',
       darkBorder:'#153757',
       darkblue:'#102d47',
       lightborder:'#E5ECF8',
