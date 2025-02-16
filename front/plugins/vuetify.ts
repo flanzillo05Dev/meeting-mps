@@ -47,7 +47,7 @@ const themecolors: ThemeDefinition = {
       themecolordark: '#102c46',
       inputdark:'#143655',
       darkprimary: '#16422a',
-      darkBorder:'#153757',
+      darkBorder:'#16422a',
       darkblue:'#102d47',
       lightborder:'#E5ECF8',
       background: '#fff',
