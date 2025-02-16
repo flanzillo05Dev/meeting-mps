@@ -29,7 +29,7 @@ const themecolors: ThemeDefinition = {
       success:'#3cd278',
       warning:'#f9c78f',
       light:'#f0f6fa',
-      muted:'#668199',
+      muted:'#abc6b8',
       dark:'#102d47',
       purple: '#cad7fd',
       lightmuted:'#f8fafc' ,

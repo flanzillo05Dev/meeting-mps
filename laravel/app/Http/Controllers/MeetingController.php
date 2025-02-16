@@ -71,7 +71,6 @@ DESCRIZIONE:
 Gentile Cliente,
 
 La ringraziamo per averci comunicato la ricezione del Registro di Carico e Scarico Rifiuti.
-Per procedere con la sua call formativa, la invitiamo a collegarsi alla nostra piattaforma di consulenza [link] e prenotare l’incontro nel giorno e orario più comodo per lei.
 
 ⚠️ Per un meeting efficace, la preghiamo di avere con sé:
     • ✅ Il Registro di Carico e Scarico Rifiuti aggiornato al 12 febbraio 2025

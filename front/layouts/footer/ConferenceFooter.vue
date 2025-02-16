@@ -48,4 +48,11 @@ import { MailIcon, MapPinIcon, PhoneCallIcon } from 'vue-tabler-icons';
                 </div>
             </div>
     </v-container>
-</section></template>
+</section>
+</template>
+
+<style scoped lang="scss">
+.bg-themecolordark {
+    background-color: #256141 !important;
+}
+</style>
