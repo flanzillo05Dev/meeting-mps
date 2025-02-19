@@ -1,57 +1,58 @@
+<script setup lang="ts">
+import {WifiIcon, DevicesIcon, CalendarIcon } from 'vue-tabler-icons'
+</script>
 <template>
     <div class="digital-events py-md-12 py-5 pb-md-0">
         <div class="py-md-10 py-sm-5">
-            <v-container>
+            <v-container class="px-md-16">
                 <div class="text-center">
                     <h2 class="text-h2 text-dark mb-sm-11 mb-5" data-aos="fade-right" data-aos-delay="200" data-aos-duration="1000">
-                        Perché MPS Recuperi?
+                        Come Funziona la Consulenza Online?
                     </h2>
-                    <p class="text-muted text-body-1" data-aos="fade-left" data-aos-delay="200" data-aos-duration="1000">
-                        La Campania rappresenta un’importante indotto per le aziende che operano nel settore della pelletteria.
-                        Mps Recuperi dal 1994 opera come primo fornitore per la gestione dei rifiuti di pelle,
-                        al servizio di aziende manifatturiere, come calzaturifici e pelletterie.
-                        Garantiamo il recupero o smaltimento dei rifiuti di pelle non pericolosi
-                        accompagnando le aziende verso il pieno rispetto della normativa vigente.
-                        Recuperiamo gli scarti di pelle per destinarli alle catene di riciclo, trasformando il
-                        rifiuto derivante dalla lavorazione delle pelletterie in nuova risorsa,
-                        rispettando i canoni dell’economia circolare. I rifiuti di pelle costituiscono un’importante
-                        segmento del nostro lavoro, e la corretta gestione è garanzia di tutela della responsabilità delle
-                        aziende produttrici. Il nostro sistema di gestione dei rifiuti di pelle al servizio delle eccellenze
-                        della pelletteria.
+                    <p class="text-dark text-body-1" data-aos="fade-left" data-aos-delay="200" data-aos-duration="1000">
+                        Con pochi click, potrà collegarsi con un nostro consulente e ricevere supporto specializzato senza la necessità di spostamenti.
+                        Se si trova in ufficio, al termine della consulenza potrà immediatamente applicare le soluzioni discusse,
+                        ottimizzando tempi e operatività.
                     </p>
-                    <v-row justify="center">
-                        <v-col cols="12" md="7">
-                            <h2 class="text-h2 text-dark mb-sm-5 mb-5 mt-10" data-aos="fade-right" data-aos-delay="200" data-aos-duration="1000">
-                                Economia circolare
-                            </h2>
+                    <p class="text-dark text-body-1" data-aos="fade-left" data-aos-delay="200" data-aos-duration="1000">
+                        Le consulenze si svolgono tramite <strong>videochiamate, messaggi istantanei, e-mail e chatbot avanzati</strong>,
+                        consentendo un'interazione efficace e diretta.
+                    </p>
+                    <v-row class="mt-md-16 mt-8  justify-sm-center">
+                        <v-col cols="12" lg="4" sm="8" md="4">
+                            <div class="text-center text-sm-start" data-aos="fade-right" data-aos-delay="200"
+                                 data-aos-duration="1000">
+                                <div class="d-flex justify-center justify-sm-start">
+                                    <v-avatar class="mb-4 bg-surface elevation-10" size="80">
+                                        <CalendarIcon size="30" class="text-primary" />
+                                    </v-avatar>
+                                </div>
+                                <h4 class="text-h4 text-dark font-weight-bold mb-md-6 mb-3">Prenotazione Semplice</h4>
+                                <p class="text-dark">I clienti selezionano il consulente desiderato e fissano un appuntamento in base alla loro disponibilità.</p>
+                            </div>
                         </v-col>
-                    </v-row>
-                    <v-row justify="center">
-                        <v-col cols="12">
-                            <p class="text-muted text-body-1" data-aos="fade-left" data-aos-delay="200" data-aos-duration="1000">
-                                La prima azienda ad aver intrapreso un percorso nel settore del recupero e del riciclo.
-                                Dal 1994 riusciamo grazie alla visione di menti pionieristiche a garantire una performance
-                                ambientale mirata alla tutela del nostro ecosistema. Pionieri orgogliosi di una storia di riciclo
-                                siamo riusciti a sovvertire le obsolete logiche di smaltimento. Grazie alla politica del recupero,
-                                i nostri prezzi sono indubbiamente motivo di grande interesse, siamo l’azienda più competitiva del settore.
-                            </p>
+                        <v-col cols="12" lg="4" sm="8" md="4">
+                            <div class="text-center text-sm-start" data-aos="fade-right" data-aos-delay="220"
+                                 data-aos-duration="1000">
+                                <div class="d-flex justify-center justify-sm-start">
+                                    <v-avatar class="mb-4 bg-surface elevation-10" size="80">
+                                        <WifiIcon size="30" class="text-primary" />
+                                    </v-avatar>
+                                </div>
+                                <h4 class="text-h4 text-dark font-weight-bold mb-md-6 mb-3">Accesso da Qualsiasi Luogo</h4>
+                                <p class="text-dark">Basta una connessione Internet per partecipare alla sessione, rendendo il servizio accessibile ovunque ci si trovi.</p>
+                            </div>
                         </v-col>
-                    </v-row>
-                    <v-row justify="center">
-                        <v-col cols="12" md="7">
-                            <div class="d-flex flex-wrap justify-space-between mt-md-6">
-                                <div>
-                                    <h2 class="text-primary text-h2">18M KG</h2>
-                                    <h6 class="text-body-1 text-muted font-weight-medium">Rifiuti recuperati</h6>
+                        <v-col cols="12" lg="4" sm="8" md="4">
+                            <div class="text-center text-sm-start" data-aos="fade-right" data-aos-delay="240"
+                                 data-aos-duration="1000">
+                                <div class="d-flex justify-center justify-sm-start">
+                                    <v-avatar class="mb-4 bg-surface elevation-10" size="80">
+                                        <DevicesIcon size="30" class="text-primary" />
+                                    </v-avatar>
                                 </div>
-                                <div>
-                                    <h2 class="text-primary text-h2">527 Piani</h2>
-                                    <h6 class="text-body-1 text-muted font-weight-medium">Sicurezza gestiti</h6>
-                                </div>
-                                <div>
-                                    <h2 class="text-primary text-h2">2032</h2>
-                                    <h6 class="text-body-1 text-muted font-weight-medium">Consulenze erogate</h6>
-                                </div>
+                                <h4 class="text-h4 text-dark font-weight-bold mb-md-6 mb-3">Strumenti Digitali Intuitivi</h4>
+                                <p class="text-dark">Utilizziamo piattaforme interattive e compatibili con dispositivi mobili, garantendo un'esperienza fluida e senza interruzioni.</p>
                             </div>
                         </v-col>
                     </v-row>
@@ -60,5 +61,3 @@
         </div>
     </div>
 </template>
-<script setup lang="ts">
-</script>
