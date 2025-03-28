@@ -34,19 +34,19 @@ class MeetingController extends Controller
 
             $bodyMeeting = $meeting->toArray();
 
-            if ($bodyMeeting['user_phone']) {
-                $message = substr(view('sms.meet-created', [
-                    'data' => $slotTime->full_slot_time->format('d/m/Y'),
-                    'time_start' => $slotTime->slot_time_start,
-                    'time_end' => $slotTime->slot_time_end,
-                ])->render(), 0, -1);
-
-                $res = json_decode(
-                    app(OpenapiClientSmsClient::class)
-                        ->sendSMS($bodyMeeting['user_phone'],
-                            $message
-                        )->getBody()->getContents(), TRUE);
-            }
+//            if ($bodyMeeting['user_phone']) {
+//                $message = substr(view('sms.meet-created', [
+//                    'data' => $slotTime->full_slot_time->format('d/m/Y'),
+//                    'time_start' => $slotTime->slot_time_start,
+//                    'time_end' => $slotTime->slot_time_end,
+//                ])->render(), 0, -1);
+//
+//                $res = json_decode(
+//                    app(OpenapiClientSmsClient::class)
+//                        ->sendSMS($bodyMeeting['user_phone'],
+//                            $message
+//                        )->getBody()->getContents(), TRUE);
+//            }
 
             $bodyMeetingCreatedAt = Carbon::parse($bodyMeeting['created_at'])->format('Y-m-d H:i:s');
 
